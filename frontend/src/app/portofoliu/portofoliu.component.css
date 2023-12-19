@@ -8,3 +8,10 @@
 .card-title{
   color: #FFD1E3;
 }
+.butoane {
+  align-items: center;
+}
+.card-img-top {
+  width:262px;
+  height: 262px;
+}
