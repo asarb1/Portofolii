@@ -1,14 +1,14 @@
-<div class="row row-cols-1 row-cols-md-4 g-6">
-   <div class="card" style="width: 18rem;" *ngFor="let portofoliu of portofolii">
-      <img src="{{portofoliu.imagini[0]}}" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">{{portofoliu.titlu}}</h5>
-        <div class="butoane">
-          <a class="btn">Vizualizare Portofoliu</a><br>
-          <a routerLink={{portofoliu.link}} class="btn">Vizualizare Site</a><br>
-          <a class="btn">Editare</a><br>
-          <a class="btn">Delete</a><br>
+  <div class="row row-cols-1 row-cols-md-4 g-6">
+     <div class="card" style="width: 18rem;" *ngFor="let portofoliu of portofolii">
+        <img src="{{portofoliu.imagini[0]}}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{portofoliu.titlu}}</h5>
+          <div class="butoane">
+            <a class="btn">Vizualizare Portofoliu</a><br>
+            <a routerLink={{portofoliu.link}} class="btn">Vizualizare Site</a><br>
+            <a class="btn">Editare</a><br>
+            <a class="btn">Delete</a><br>
+          </div>
         </div>
       </div>
-    </div>
-</div>
+  </div>
