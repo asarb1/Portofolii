@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, Input, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
 import { PortofoliiService } from '../portofolii.service';
@@ -13,8 +13,10 @@ import { Portofoliu } from '../portofoliu';
 })
 export class PortofoliiComponent {
   route: ActivatedRoute = inject(ActivatedRoute);
-      portofolii = -1;
+      portofoliiService:PortofoliiService = inject(PortofoliiService);
+      portofolii:Portofoliu | undefined;
       constructor() {
-          this.portofolii = Number(this.route.snapshot.params['id']);
+          const portofoliuId = this.route.snapshot.params['id'];
+          this.portofolii=this.portofoliiService.getPortofoliosById(portofoliuId);
       }
 }
