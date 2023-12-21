@@ -4,10 +4,14 @@ import { RouterOutlet } from '@angular/router';
 import { RouterModule } from '@angular/router';
 import { PortofoliuComponent } from './portofoliu/portofoliu.component';
 import { FormComponent } from './form/form.component';
+import {HeaderComponent} from './header/header.component';
+import {PortofoliiComponent} from './portofolii/portofolii.component';
+import {PaginaportofoliuComponent} from './paginaportofoliu/paginaportofoliu.component';
+import {PaginaportofoliiComponent} from './paginaportofolii/paginaportofolii.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, RouterModule, PortofoliuComponent, FormComponent],
+  imports: [CommonModule, RouterOutlet, RouterModule, PortofoliuComponent, FormComponent, HeaderComponent, PortofoliiComponent, PaginaportofoliuComponent, PaginaportofoliiComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

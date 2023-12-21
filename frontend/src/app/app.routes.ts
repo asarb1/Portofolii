@@ -1,16 +1,17 @@
 import { Routes } from '@angular/router';
 import {PortofoliuComponent} from './portofoliu/portofoliu.component';
-import {PortofoliiComponent} from './portofolii/portofolii.component';
+import {PaginaportofoliuComponent} from './paginaportofoliu/paginaportofoliu.component';
+import {PaginaportofoliiComponent} from './paginaportofolii/paginaportofolii.component';
 
 export const routes: Routes = [
   {
     path: '',
-    component: PortofoliuComponent,
-    title: 'Portofoliu'
+    component: PaginaportofoliiComponent,
+    title: 'Detalii Portofoliu'
   },
   {
     path: 'portofoliu/:id',
-    component: PortofoliiComponent,
+    component: PaginaportofoliuComponent,
     title: 'Detalii Portofoliu'
   }
 ];
