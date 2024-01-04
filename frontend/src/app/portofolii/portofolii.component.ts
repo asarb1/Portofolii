@@ -3,11 +3,11 @@ import { CommonModule } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
 import { PortofoliiService } from '../portofolii.service';
 import { Portofoliu } from '../portofoliu';
-
+import {EditareportofoliuComponent} from '../editareportofoliu/editareportofoliu.component';
 @Component({
   selector: 'app-portofolii',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, EditareportofoliuComponent],
   templateUrl: './portofolii.component.html',
   styleUrl: './portofolii.component.css'
 })
