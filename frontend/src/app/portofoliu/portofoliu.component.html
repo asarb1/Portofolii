@@ -4,7 +4,7 @@
         <div class="card-body">
           <h5 class="card-title">{{portofoliu.titlu}}</h5>
           <div class="butoane">
-            <a routerLink={{portofoliu.link}} class="btn">Vizualizare Site</a><br>
+            <a (click)="goToUrl(portofoliu.link)" class="btn">Vizualizare Site</a><br>
             <a [routerLink]="['/portofoliu', portofoliu.id]" class="btn">Editare</a><br>
             <a class="btn">Delete</a><br>
           </div>
