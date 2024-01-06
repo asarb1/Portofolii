@@ -4,6 +4,7 @@ import { RouterModule } from '@angular/router';
 import { RouterOutlet } from '@angular/router';
 import { Portofoliu } from '../portofoliu';
 import {PortofoliiService} from '../portofolii.service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-portofoliu',
@@ -21,4 +22,9 @@ constructor() {
 goToUrl(url:any):void{
   window.location.href=url;
 }
+deletePortofolio(id: any){
+  const objWithIdIndex = this.portofolii.findIndex((obj:any) => obj.id === id);
+  this.portofolii.splice(objWithIdIndex, 1);
+}
+
 }

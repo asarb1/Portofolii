@@ -6,7 +6,7 @@
           <div class="butoane">
             <a (click)="goToUrl(portofoliu.link)" class="btn">Vizualizare Site</a><br>
             <a [routerLink]="['/portofoliu', portofoliu.id]" class="btn">Editare</a><br>
-            <a class="btn">Delete</a><br>
+            <a class="btn" (click)="deletePortofolio(portofoliu.id)">Delete</a><br>
           </div>
         </div>
       </div>
