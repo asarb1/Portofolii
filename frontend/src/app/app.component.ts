@@ -9,10 +9,12 @@ import {PortofoliiComponent} from './portofolii/portofolii.component';
 import {PaginaportofoliuComponent} from './paginaportofoliu/paginaportofoliu.component';
 import {PaginaportofoliiComponent} from './paginaportofolii/paginaportofolii.component';
 import {EditareportofoliuComponent} from './editareportofoliu/editareportofoliu.component';
+import { FormsModule } from "@angular/forms";
+
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, RouterModule, PortofoliuComponent, FormComponent, HeaderComponent, PortofoliiComponent, PaginaportofoliuComponent, PaginaportofoliiComponent, EditareportofoliuComponent],
+  imports: [CommonModule, RouterOutlet, RouterModule, PortofoliuComponent, FormComponent, HeaderComponent, PortofoliiComponent, PaginaportofoliuComponent, PaginaportofoliiComponent, EditareportofoliuComponent, FormsModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

@@ -1,16 +1,16 @@
 
-  <form class="form" method="post">
+  <form class="form" (ngSubmit)="updatePortofolio()">
     <div class="mb-3">
     <label for="exampleFormControlInput1" class="form-label">Titlu</label>
-    <input type="text" class="form-control" id="exampleFormControlInput1">
+    <input type="text" class="form-control" id="exampleFormControlInput1" name="titlu" [(ngModel)]="formData.titlu">
     </div>
     <div class="mb-3">
-    <label for="exampleFormControlInput1" class="form-label">Link</label>
-    <input type="text" class="form-control" id="exampleFormControlInput1">
+    <label for="exampleFormControlInput2" class="form-label">Link</label>
+    <input type="text" class="form-control" id="exampleFormControlInput2" name="link" [(ngModel)]="formData.link">
     </div>
     <div class="mb-3">
     <label for="formFileMultiple" class="form-label">Imagini</label>
-    <textarea class="form-control" aria-label="With textarea"></textarea>
+    <textarea class="form-control" id="formFileMultiple" aria-label="With textarea" name="imagini" [(ngModel)]="formData.imagini"></textarea>
     </div>
     <div class="col-12">
       <button class="btn btn-primary" type="submit">Submit form</button>

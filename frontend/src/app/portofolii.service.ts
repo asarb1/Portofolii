@@ -51,5 +51,7 @@ export class PortofoliiService {
 getPortofoliosById(id: String): Portofoliu | undefined {
   return this.portofolii.find(portofolii => portofolii.id === id);
 }
-
+addPortofolio(object:any) {
+  this.portofolii.push(object)
+}
 }
